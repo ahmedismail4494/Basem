@@ -1,0 +1,231 @@
+
+.mainPage{
+  width: 100%;
+
+
+  // Header Section
+  .Header{
+    margin-top: 75px;
+    height: calc(100vh - 70px);
+    color: #fff;
+    background: url("./../images/basem_4.jpg");
+    background-attachment: fixed;
+    background-position-y: 50px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p{
+      padding: 20px 50px;
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    button{
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 2px solid #4267B2;
+      background-color: #4267B2;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+
+    a{
+      color: #fff;
+      font-weight: bold;
+    }
+
+  }
+
+
+  // Founder Section
+  .Founder {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+
+    .ImageHolder{
+      padding: 20px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .Image{
+        min-width: 90% !important;
+        min-height: 90% !important;
+        border-radius: 10px;
+        position: relative;
+
+        
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 90%;
+        background-color: #02172c;
+        border-radius: 10px;
+        z-index: -1;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        background-color: #b19d6b;
+        border-radius: 10px;
+        z-index: -1;
+      }
+    }
+
+    .titleParent{
+      height: 100px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .info{
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid #02172c;
+      border-radius: 10px;
+      direction: rtl;
+
+      
+
+      h3{
+        position: relative;
+        padding: 15px 0;
+        margin: 0;
+        color: #b19d6b;
+        background-color: #02172c;
+      }
+
+      ul{
+        position: relative;
+        list-style: none;
+        padding: 15px 0;
+        margin: 0;
+        color: #02172c;
+        background-color: #b19d6b;
+        border-radius: 0 0 10px 10px;
+
+        li{
+          padding: 5px 0 !important;
+          height: 20%;
+          font-size: 20px;
+          border-bottom: 1px solid #02172c;
+
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  
+  // Company Section
+  .Company{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    background-color: #02172c;
+    color: #b19d6b;
+    text-align: center;
+
+    .Image{
+      border-radius: 10px;
+    }
+
+    .titleParent{
+      height: 100px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .info{
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      border-radius: 10px;
+      direction: rtl;
+
+      @media (max-width: 767.98px) { 
+        margin-top: 0px;
+      }
+      @media (max-width: 991.98px) { 
+        width: 100%;
+      }
+
+      ul{
+        position: relative;
+        list-style: none;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      
+        li{
+          width: 100%;
+          height: 100%;
+          padding: 10px !important;
+          font-size: 20px;
+          color: #02172c;
+          background-color: #b19d6b;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.05);
+          }
+          
+          p{
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Advertisement Section
+  .Advertisement{
+    padding: 100px 0 !important;
+
+    .imageHolder{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+      .Image{ 
+        min-width: 100%;
+        min-height: 100% !important;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+          transform: scale(1.1) skew(5deg) !important;
+        }
+      }
+    }
+  }
+
+
+
+
+
+}

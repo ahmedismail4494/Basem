@@ -1,0 +1,27 @@
+
+.ContactPage {
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+  
+
+  .info1{
+      padding: 50px 0;
+      direction: rtl;
+
+
+      ul{
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        li{
+          padding: 20px;
+          display: flex; 
+          font-weight: bold;
+        }
+      }
+    }
+
+  
+}

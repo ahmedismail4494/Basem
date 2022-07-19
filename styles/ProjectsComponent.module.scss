@@ -1,0 +1,195 @@
+
+.projects{
+  padding-top: 75px;
+  height: auto;
+  background-color: #02172c;
+  overflow: hidden;
+
+
+  /* Header section */
+  .header{
+    width: 100%;
+    max-height: 100% !important;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 90vh !important;
+
+      @media (max-width: 767.98px) { 
+        height: 50vh !important;
+      }
+    
+      @media (max-width: 991.98px) { 
+        height: 50vh !important;
+      }
+    }
+  }
+
+  /* Tala section */
+  .tala{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    background-color: #02172c;
+    
+    .discription{
+      padding: 50px 0;
+      color: #b19d6b;
+
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        
+
+        li{
+          margin-top: 20px;
+          display: block !important;
+        }
+      }
+    }
+
+    .talaImages{
+      width: 100%;
+      padding-bottom: 50px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      gap: 5px;
+
+      img{
+        height: 50vh !important;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+          transform: scale(1.1) skew(-5deg) !important;
+        }
+      }
+    }
+  }
+
+
+  /* Header taqset */
+  .taqset{
+    background-color: #fff;
+    padding: 100px 0;
+
+    .taqsetIcons{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      gap: 20px;
+      padding: 50px 10px;
+
+      .taqsetIcon{ 
+        max-width: 100% !important;
+        min-height: 50vh !important;
+        padding: 25px 0;
+        margin: 10px 0;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+
+        &:hover{
+          box-shadow: 0 0 5px 5px #ddd;
+
+          svg{
+            color: #b19d6b;
+              background-color: #02172c;
+          }
+        }
+
+        span{
+          color: #02172c;
+
+
+          svg{
+            height: 75px !important;
+            width: 75px !important;
+            padding: 30px;
+            color: #02172c;
+            background-color: #b19d6b;
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+          }
+
+        }
+        p{
+          color: #02172c;
+        }
+      }
+    }
+  }
+
+  /* nakhil section */
+  .nakhil{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    color: #b19d6b;
+    background-color: #02172c;
+
+    .discription{
+      padding-top: 50px;
+
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        
+
+        li{
+          margin-top: 20px;
+          display: block !important;
+        }
+      }
+    }
+
+    .talaImages{
+      width: 100%;
+      padding-bottom: 50px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      gap: 5px;
+      overflow: hidden;
+
+      img{
+        min-height: 50vh !important;
+        max-height: 50vh !important;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+          transform: scale(1.1) skew(-5deg) !important;
+        }
+      }
+    }
+
+  }
+
+
+
+  /* nakhil section */
+  .join{
+    height: 500px;
+    width: 100%;
+    background-image: url('./../images/shif_4.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+}
+
+
+  /*========================
+    blue: # 02172c         gold: # b19d6b
+  ========================*/

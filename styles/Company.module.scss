@@ -1,0 +1,76 @@
+
+.Company{
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  background-color: #02172c;
+  color: #b19d6b;
+  text-align: center;
+
+  .Image{
+    border-radius: 10px;
+  }
+
+  .titleParent{
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .info{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    direction: rtl;
+
+    @media (max-width: 767.98px) { 
+      margin-top: 0px;
+    }
+    @media (max-width: 991.98px) { 
+      width: 100%;
+    }
+
+    ul{
+      position: relative;
+      list-style: none;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+     
+      
+
+      li{
+        width: 100%;
+        height: 100%;
+        padding: 10px !important;
+        font-size: 20px;
+        color: #02172c;
+        background-color: #b19d6b;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          transform: scale(1.05);
+        }
+        
+        p{
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+  /*========================
+    blue: # 02172c         gold: # b19d6b
+  ========================*/
+
+

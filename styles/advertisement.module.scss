@@ -1,0 +1,19 @@
+
+.Advertisement{
+  padding: 100px 0 !important;
+
+  .imageHolder{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .Image{ 
+      min-width: 100%;
+      min-height: 100% !important;
+      transition: all 0.3s ease-in-out;
+
+      &:hover{
+        transform: scale(1.1) skew(5deg) !important;
+      }
+    }
+  }
+}
