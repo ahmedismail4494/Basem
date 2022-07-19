@@ -1,21 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import Nstyles from "./../styles/Layout.module.scss";
+import Lstyle from "./../styles/Layout.module.scss";
 import Navigation from './Navigation';
 import Footer from './Footer';
-import bootstrapStyle from 'bootstrap/dist/css/bootstrap.css';
-
-import { useEffect } from "react";
-
-function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
-  }, []);
-}
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <div className={Lstyle.out}>
       <Head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
