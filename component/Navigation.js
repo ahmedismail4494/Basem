@@ -23,16 +23,16 @@ const Navigation = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav d-flex justify-content-end ">
               <li className="nav-item ">
-                <span className="nav-link" ><Link href="/"  >  الرئيسيه  </Link></span>
+                <span className="nav-link" ><Link href="/"  crossorigin="anonymous" >  الرئيسيه  </Link></span>
               </li>
               <li className="nav-item">
-                <span className="nav-link" > <Link href="/projects"  >  مشاريعنا </Link></span>
+                <span className="nav-link" > <Link href="/projects" crossorigin="anonymous" >  مشاريعنا </Link></span>
               </li>
               <li className="nav-item">
-                <span className="nav-link" > <Link href="/services"  >  خدماتنا </Link> </span>
+                <span className="nav-link" > <Link href="/services" crossorigin="anonymous" >  خدماتنا </Link> </span>
               </li>
               <li className="nav-item">
-                <span className="nav-link" > <Link href="/contact"  >   اتصل بن  </Link>  </span>
+                <span className="nav-link" > <Link href="/contact" crossorigin="anonymous" >   اتصل بن  </Link>  </span>
               </li>
             </ul>
           </div>
